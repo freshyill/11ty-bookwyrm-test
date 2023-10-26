@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Books
+  order: 3
+---
+<h1>Books</h1>
+
+{% for data in bookwyrm %}
+{{ data }}
+{{ data | dump }}<br/><br/><br/>
+{% endfor %}
